@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -41,7 +40,6 @@ body {
 </style>
 <body>
 
-    <br style=“height:900px”;><br>
     <img div class="gallery" src="deliveryStock.jpg" alt="stock1" style="display:block; margin-left:auto; margin-right:auto; width:50%;"> 
     <h2 align="center">Register as a: </h2>
 
@@ -51,12 +49,10 @@ body {
         <button class="buttons" name="volunteerBtn" onclick="showVolunteer()">Volunteer</button>
     </div>
 
-    <br style=“height:200px”;><br>
     <div id="Existing" align="center">
         <button class="existingUserBtn" name="existingUserBtn"><a href="logIn.html">Existing User?</a></button>
     </div>
 
-    <br style=“height:900px”;><br>
 
     <div id="Volunteer" align="center" style="display:none;">
       <h3>Volunteer Registration</h3>
@@ -74,7 +70,6 @@ body {
             <input type="reset">
         </form>
     </div>
-    <br style=“height:900px”;><br>
 
     <div id="Restaurant" align="center" style="display:none;">
       <h3>Restaurant Registration</h3>
@@ -95,7 +90,6 @@ body {
         </form>
     </div>
 
-    <br style=“height:900px”;><br>
 
     <div id="Charity" align="center" style="display:none;">
       <h3>Charity Registration</h3>
