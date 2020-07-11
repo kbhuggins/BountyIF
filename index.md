@@ -7,7 +7,7 @@
 </head>
 
 <style>
-    .buttons {
+  .buttons {
     background-color: white;
     color: black;
     border: 2px solid rgb(115, 185, 133);
@@ -34,29 +34,52 @@
     font-size: medium;
 }
 
+#Charity, #Volunteer, #Restaurant {
+    padding-top: 20px;
+    transition: all linear 0.5s;
+    background-color:whitesmoke;
+    height:350px;
+}
+
+.ng-hide {
+    height:0;
+}
+
+a, a:visited {
+    text-decoration:none;
+    color: black;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
-</style>
-<body>
 
+html{
+    scroll-behavior: smooth;
+}
+</style>
+<body ng-PP="myApp">
+  
+    <br style=“height:900px”;><br>
     <img div class="gallery" src="deliveryStock.jpg" alt="stock1" style="display:block; margin-left:auto; margin-right:auto; width:50%;"> 
     <h2 align="center">Register as a: </h2>
 
     <div id ="content" align="center">
-        <button class="buttons" name="charityBtn" onclick="showCharity()">Charity</button>
-        <button class="buttons" name="restaurantBtn" onclick="showRestaurant()">Restaurant</button>
-        <button class="buttons" name="volunteerBtn" onclick="showVolunteer()">Volunteer</button>
+        <button class="buttons" name="charityBtn" onclick="showCharity()"><a href="#Charity">Charity</a></button>
+        <button class="buttons" name="restaurantBtn" onclick="showRestaurant()"><a href="#Restaurant">Restaurant</a></button>
+        <button class="buttons" name="volunteerBtn" onclick="showVolunteer()"><a href="#Volunteer">Volunteer</a></button>
     </div>
 
+    <br style=“height:200px”;><br>
     <div id="Existing" align="center">
         <button class="existingUserBtn" name="existingUserBtn"><a href="logIn.html">Existing User?</a></button>
     </div>
 
+    <br style=“height:900px”;><br>
 
-    <div id="Volunteer" align="center" style="display:none;">
+    <div id="Volunteer" align="center" style="display:none;"ng-app="slider">
       <h3>Volunteer Registration</h3>
-        <form action="welcome.php">
+        <form action="databaseConn.php">
             <label for="fname">First Name: </label>
             <input type="text" id="fName" name="fName"><br><br>
             <label for="lName">Last Name: </label>
@@ -71,9 +94,11 @@ body {
         </form>
     </div>
 
-    <div id="Restaurant" align="center" style="display:none;">
+    <br style=“height:900px”;><br>
+
+    <div id="Restaurant" align="center" style="display:none;"ng-app="slider">
       <h3>Restaurant Registration</h3>
-        <form action="welcome.php">
+        <form action="databaseConn.php">
             <label for="rName">Restaurant Name: </label>
             <input type="text" id="rName" name="rName"><br><br>
             <label for="rAddress">Address Line 1: </label>
@@ -90,10 +115,11 @@ body {
         </form>
     </div>
 
+    <br style=“height:900px”;><br>
 
-    <div id="Charity" align="center" style="display:none;">
+    <div id="Charity" align="center" style="display:none;" ng-app="slider">
       <h3>Charity Registration</h3>
-        <form action="welcome.php">
+        <form action="databaseConn.php">
             <label for="cName">Charity Name: </label>
             <input type="text" id="cName" name="cName"><br><br>
             <label for="cAddress">Address: </label>
@@ -113,9 +139,10 @@ body {
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
 
-    <script type="text/javascript">
+    <script type="text/javascript">var app = angular.module('slider', ['ngAnimate']);
+    </script>
 
-      
+    <script type="text/javascript">
           function showCharity() {
               var x = document.getElementById("Charity");
               if (x.style.display === "none") {
@@ -125,8 +152,6 @@ body {
               }
             }
       
-
-      
             function showRestaurant() {
               var x = document.getElementById("Restaurant");
               if (x.style.display === "none") {
@@ -135,9 +160,7 @@ body {
                 x.style.display = "none";
               }
             }
-      
 
-     
           function showVolunteer() {
             var x = document.getElementById("Volunteer");
             if (x.style.display === "none") {
@@ -146,7 +169,6 @@ body {
               x.style.display = "none";
             }
           }
-        
 
     </script>
 </body>
