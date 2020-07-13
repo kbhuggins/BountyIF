@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -50,7 +49,6 @@ body {
         <button class="buttons" name="volunteerBtn" onclick="showVolunteer()">Volunteer</button>
     </div>
 
-    <br style=“height:200px”;><br>
     <div id="Existing" align="center">
         <button class="existingUserBtn" name="existingUserBtn"><a href="logIn.html">Existing User?</a></button>
     </div>
