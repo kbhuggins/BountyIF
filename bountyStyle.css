@@ -1,0 +1,74 @@
+.buttons {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(115, 185, 133);
+    border-radius: 0px;
+    height: 80px;
+    width: 250px;
+    padding: 10px 15px 10px 15px;
+    font-size: medium;
+    }
+
+.buttons:hover, .existingUserBtn:hover{
+    background-color: rgb(157, 250, 180);
+    transition-duration: 0.9s;
+}
+
+.existingUserBtn{
+    background-color: white;
+    color: black;
+    border: 3px solid rgb(157, 250, 180);
+    border-radius: 4px;
+    height: 40px;
+    width: 160px;
+    padding: 10px 15px 10px 15px;
+    font-size: medium;
+}
+
+
+
+.ng-hide {
+    height:0;
+}
+
+#Charity, #Volunteer, #Restaurant {
+    padding-top: 20px;
+    transition: all linear 0.5s;
+    background-color:whitesmoke;
+    height:350px;
+}
+
+#tableDiv {
+    width: 75%;
+    margin-left: 13%;
+}
+
+a, a:visited {
+    text-decoration:none;
+    color: black;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid  rgb(157, 250, 180);
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color:  rgb(157, 250, 180);
+  }
