@@ -50,6 +50,7 @@ body {
     </div>
 
     <div id="Existing" align="center">
+       <br><br>
         <button class="existingUserBtn" name="existingUserBtn"><a href="logIn.html">Existing User?</a></button>
     </div>
 
