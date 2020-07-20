@@ -5,16 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="bountyStyle.css">
     <title>Charity Home</title>
+  
+
 </head>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
 <body>
-    <br style=“height:900px”;><br>
-    <div ng-app="" ng-init="userName='CharityName'">
-        <h3 align="center">Welcome back, {{userName}}</h3>
-        
-    <div id ="content" align="center">
-        <button class="buttons" name="restaurantLookup" ><a href="#Charity">Find Local Donations</a></button>
+    <div class="topnav">
+        <a class="active" href="/registration.html">Home</a>
+        <a class="active" href="/login.html">Sign In</a>
+
+      </div>
+
+    <div class="parallax">
+        <div id="pageContent">
+            <div class="charityContentBtn">
+                <br style=“height:900px”;><br>
+                <div ng-app="" ng-init="userName='CharityName'">
+                    <h3 align="center">Welcome back!</h3>
+                
+                    <div id ="content" align="center">
+                        <button class="buttons" name="restaurantLookup"><a href="#pageJump"> Local Donations</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="parallax">
+        <div id="pageContent" ng-app="slider">
+            <h3>Food Pickup Requests </h3>
+            
+            <div id="tableDiv">
+                <h4>Active Requests</h4>
+                <table>
+                    <tr>
+                        <th>Order Number</th>
+                        <th>Restaurant Name</th>
+                        <th>Food type</th>
+                    </tr>
+                    <tr>
+                        <td>#8823445</td>
+                        <td>Chili's</td>
+                        <td>Produce</td>
+                    </tr>
+                    <tr>
+                        <td>#8823435</td>
+                        <td>Red Lobster</td>
+                        <td>Seafood</td>
+                    </tr>
+                </table>
+            </div>
+           <br style=“height:900px”;><br>
+           <div id="pageJump"></div>
+  
+          <div id="tableDiv">
+          <h4>Past Requests:</h4>
+          <table style="width:100%">
+              <tr>
+                <th>Order Number</th>
+                <th>Restaurant Name</th>
+                <th>Food type</th>
+              </tr>
+              <tr>
+                <td>#8823425</td>
+                <td>Domino's</td>
+                <td>Produce</td>
+              </tr>
+              <tr>
+                <td>#8823415</td>
+                <td>Red Lobster</td>
+                <td>Seafood</td>
+              </tr>
+            </table>
+        </div>
+        </div>
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+    <script type="text/javascript"> var app = angular.module('slider', ['ngAnimate']);</script>
+
+    <script type="text/javascript">
+
+        function showContent() {
+            var x = document.getElementById("pageContent");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
+    </script>
 </body>
 </html>
