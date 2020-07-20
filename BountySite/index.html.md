@@ -135,7 +135,6 @@ table {
 <body>
   <div class="parallax">
     <div id="pageContent">
-        <br style=“height:900px”;><br>
         <h2 align="center">Register as a: </h2>
 
         <div id ="content" align="center">
@@ -144,7 +143,6 @@ table {
         <!---<button class="buttons" name="volunteerBtn"onclick="showVolunteer()"><a href="#Volunteer">Volunteer</a></button> --->
         </div>
       
-        <br style=“height:200px”;><br>
         <div id="Existing" align="center">
             <button class="existingUserBtn" name="existingUserBtn"><a href="logIn.html">Existing User?</a></button>
         </div>
@@ -187,7 +185,6 @@ table {
               </form>
         </div>
 
-        <br style=“height:900px”;><br>
       
 
         <div id="Charity" align="center" style="display:none;" ng-app="slider">
