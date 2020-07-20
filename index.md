@@ -7,7 +7,7 @@
 </head>
 
 <style>
-    .buttons {
+ .buttons {
     background-color: white;
     color: black;
     border: 2px solid rgb(115, 185, 133);
@@ -34,9 +34,102 @@
     font-size: medium;
 }
 
+
+.ng-hide {
+    height:0;
+}
+
+#Charity, #Volunteer, #Restaurant {
+    padding-top: 20px;
+    transition: all linear 0.5s;
+    background-color: white;
+    height:350px;
+}
+
+#tableDiv {
+    width: 75%;
+    margin-left: 13%;
+}
+
+.parallax, .parallaxHidden {
+    /* The image used */
+    background-image: url("bountyBgrnd.jpg");
+  
+    /* Set a specific height */
+    height: 500px;
+    padding: 50px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+#pageContent, .charityContentBtn{
+    align:center;
+    margin-left: 70px;
+    width:70%;
+    background-color: rgb(219, 255, 228);
+    padding: 100px;
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: rgb(188, 252, 204);
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: rgb(188, 252, 204);
+    color: rgb(82, 104, 87);
+  }
+
+
+a, a:visited {
+    text-decoration:none;
+    color: black;
+}
+
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid  rgb(135, 177, 145);
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color:  whitesmoke;
+  }
 </style>
 <body>
 
@@ -46,30 +139,11 @@ body {
     <div id ="content" align="center">
         <button class="buttons" name="charityBtn" onclick="showCharity()">Charity</button>
         <button class="buttons" name="restaurantBtn" onclick="showRestaurant()">Restaurant</button>
-        <button class="buttons" name="volunteerBtn" onclick="showVolunteer()">Volunteer</button>
     </div>
 
     <div id="Existing" align="center">
        <br><br>
         <button class="existingUserBtn" name="existingUserBtn"><a href="logIn.html">Existing User?</a></button>
-    </div>
-
-
-    <div id="Volunteer" align="center" style="display:none;">
-      <h3>Volunteer Registration</h3>
-        <form action="welcome.php">
-            <label for="fname">First Name: </label>
-            <input type="text" id="fName" name="fName"><br><br>
-            <label for="lName">Last Name: </label>
-            <input type="text" id="lName" name="lName"><br><br>
-            <label for="email">Email address: </label>
-            <input type="email" id="email" name="email"><br><br>
-            <label for="DLnum">Driver's License Number: </label>
-            <input type="text" id="DLnum" name="DLnum">
-            <br style=“height:200px”;><br>
-            <input type="submit" value="Submit">
-            <input type="reset">
-        </form>
     </div>
 
     <div id="Restaurant" align="center" style="display:none;">
