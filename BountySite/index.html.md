@@ -179,7 +179,6 @@ table {
                   <input type="text" id="cityName" name="cityName"><br><br>
                   <label for="state">State: </label>
                   <input type="text" id="state" name="state">
-                  <br style=“height:200px”;><br>
                   <input type="submit" value="Submit">
                   <input type="reset">
               </form>
@@ -200,7 +199,6 @@ table {
                   <input type="text" id="charityCity" name="charityCity"><br><br>
                   <label for="cState">State: </label>
                   <input type="text" id="cState" name="cState">
-                  <br style=“height:200px”;><br>
                   <input type="submit" value="Submit">
                   <input type="reset">
               </form>
