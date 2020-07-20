@@ -8,15 +8,86 @@
 </head>
 <body ng-app="myApp">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <div class="topnav">
+        <a class="active" href="/registration.html">Home</a>
+        <a class="active" href="/login.html">Sign In</a>
+
+      </div>
         
     <br style=“height:900px”;><br>
-    <div ng-app="" ng-init="userName='RestaurantName'">
-        <h3 align="center">Welcome back, {{userName}}</h3>
+        <div class="parallax">
+            <div id="pageContent">
+                <h3 align="center">Welcome back!</h3>
 
-        <div id ="content" align="center">
-            <button class="buttons" name="restaurantLookup"><a href="#Charity"> Request a Pickup</a></button>
+                <div id ="content" align="center">
+                    <button class="buttons" name="restaurantLookup" onclick="showContent()"><a href="#pageJump"> Request a Food Pickup</a></button>
+                </div>
+            </div>
         </div>
     
-        
+        <div class="parallaxHidden">
+            <div id="pageContent">
+                        <h3>Food Pickup Requests </h3>
+                        
+                        <div id="tableDiv">
+                            <h4>Active Pickup Requests</h4>
+                            <table>
+                                <tr>
+                                    <th>Order Number</th>
+                                    <th>Charity Name</th>
+                                    <th>Food</th>
+                                </tr>
+                                <tr>
+                                    <td>#8823445</td>
+                                    <td>GNSI</td>
+                                    <td>10LB of Produce</td>
+                                </tr>
+                                <tr>
+                                    <td>#8823435</td>
+                                    <td>ATL Food Bank</td>
+                                    <td>5LB of Poultry</td>
+                                </tr>
+                            </table>
+                        </div>
+                    <br style=“height:900px”;><br>
+
+                <div id="pageJump"></div>
+
+                <div id="tableDiv">
+                    <h4>Active Pickup Requests</h4>
+                    <table>
+                        <tr>
+                            <th>Order Number</th>
+                            <th>Charity Name</th>
+                            <th>Food</th>
+                        </tr>
+                        <tr>
+                            <td>#8823445</td>
+                            <td>GNSI</td>
+                            <td>30 Gallons of Milk</td>
+                        </tr>
+                        <tr>
+                            <td>#8823435</td>
+                            <td>ATL Food Bank</td>
+                            <td>5LB of Produce</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+            <br style=“height:900px”;><br>
+            </div>
+        </div>
+            
+        <script type="text/javascript">
+            function showContent() {
+                var x = document.getElementsById("pageContent");
+                if (x.style.display === "none") {
+                  x.style.display = "block";
+                } else {
+                  x.style.display = "none";
+                }
+              }
+        </script>    
 </body>
 </html>

@@ -26,7 +26,6 @@
 }
 
 
-
 .ng-hide {
     height:0;
 }
@@ -34,7 +33,7 @@
 #Charity, #Volunteer, #Restaurant {
     padding-top: 20px;
     transition: all linear 0.5s;
-    background-color:whitesmoke;
+    background-color: white;
     height:350px;
 }
 
@@ -42,6 +41,56 @@
     width: 75%;
     margin-left: 13%;
 }
+
+.parallax, .parallaxHidden {
+    /* The image used */
+    background-image: url("bountyBgrnd.jpg");
+  
+    /* Set a specific height */
+    height: 500px;
+    padding: 50px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+#pageContent, .charityContentBtn{
+    align:center;
+    margin-left: 70px;
+    width:70%;
+    background-color: rgb(219, 255, 228);
+    padding: 100px;
+}
+
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: rgb(188, 252, 204);
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: rgb(188, 252, 204);
+    color: rgb(82, 104, 87);
+  }
+
 
 a, a:visited {
     text-decoration:none;
@@ -64,11 +113,11 @@ table {
   }
   
   td, th {
-    border: 1px solid  rgb(157, 250, 180);
+    border: 1px solid  rgb(135, 177, 145);
     text-align: left;
     padding: 8px;
   }
   
   tr:nth-child(even) {
-    background-color:  rgb(157, 250, 180);
+    background-color:  whitesmoke;
   }
